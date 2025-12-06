@@ -1,0 +1,135 @@
+/* الخط والخلفية */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* الهيدر */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 25px 15px;
+    font-size: 22px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 18px;
+}
+
+/* رسالة الترحيب */
+.welcome {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+/* الأيقونات في الوسط */
+.center-icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* الأيقونات الدائرية */
+.circle-icon {
+    width: 90px;
+    height: 90px;
+    background: white;
+    border: 2px solid #2c3e50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00000020;
+}
+
+.circle-icon img {
+    width: 50px;
+    transition: 0.3s;
+}
+
+.circle-icon:hover {
+    background: #2c3e50;
+    transform: scale(1.08);
+}
+
+.circle-icon:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* تأثير النبض */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 1.8s infinite ease-in-out;
+}
+
+/* عنوان قسم التواصل */
+.contact h2 {
+    margin-top: 50px;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+/* قائمة السوشيال ميديا */
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact ul li {
+    margin: 14px 0;
+}
+
+.line-icon {
+    width: 28px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* الروابط */
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #1a89c7;
+}
+
+/* الفوتر */
+footer {
+    margin-top: 50px;
+    padding: 18px;
+    background: #2c3e50;
+    color: white;
+    font-size: 18px;
+}
+
+/* لينك المطور داخل الفوتر */
+footer a {
+    color: #00d9ff !important;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #70e8ff !important;
+}
